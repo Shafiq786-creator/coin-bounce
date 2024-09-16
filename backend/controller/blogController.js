@@ -87,14 +87,18 @@ const Comment = require('../models/comments');
             return next(error);
         }
 
+        const {id} = req.params;
         let blog;
 
-        const {id} = req.params;
         try {
             blog = await Blog.findOne({_id: id}).populate('author');
         } catch (error) {
             return next(error);
         }
+
+        if (!blog) {
+          return res.status(404).json({ message: "Blog not found" });
+      }
 
         const blogDto = new BlogDetailDTO(blog);
 

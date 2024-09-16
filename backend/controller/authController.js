@@ -6,7 +6,7 @@ const UserDTO = require('../dto/user');
 const JWTService = require('../services/JWTservice');
 const RefreshToken = require('../models/token');
 
-const passwordPattern =/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$/
+const passwordPattern =/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,25}$/
 
 
 const authController = {
