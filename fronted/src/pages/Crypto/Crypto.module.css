@@ -1,0 +1,128 @@
+.tableContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    overflow-x: auto;
+}
+
+
+
+.table{
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    
+}
+
+.head{
+  background-color: #f2f2f2;
+}
+
+.head th{
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    padding: 12px;
+}
+.tableRow td{
+   border-bottom: 1px solid #f2f2f2;
+   padding: 8px;
+   font-size: 20px;
+   text-align: center;
+   font-weight: bold;
+}
+
+.logo{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    text-align: left;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.symbolcoin{
+    width: 30px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+
+/* Responsive Design  */
+
+/* For tablets and smaller laptops */
+@media (max-width: 1024px) {
+    .table {
+        width: 90%; 
+    }
+
+    .head th {
+        font-size: 24px; 
+        padding: 10px;
+    }
+
+    .tableRow td {
+        font-size: 18px;
+        padding: 6px;
+    }
+
+    .logo {
+        width: 50%; 
+        gap: 20px;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+    .table {
+        width: 100%; 
+    }
+
+    .head th {
+        font-size: 20px;
+        padding: 8px;
+    }
+
+    .tableRow td {
+        font-size: 16px;
+        padding: 5px;
+    }
+
+    .logo {
+        width: 60%; 
+        gap: 15px;
+    }
+
+    .symbolcoin {
+        width: 25px; 
+    }
+}
+
+/* For small mobile devices  */
+@media (max-width: 480px) {
+    .table {
+        width: 100%;
+    }
+
+    .head th {
+        font-size: 18px; 
+        padding: 6px;
+    }
+
+    .tableRow td {
+        font-size: 14px;
+        padding: 4px;
+    }
+
+    .logo {
+        width: 70%; 
+        gap: 10px;
+    }
+
+    .symbolcoin {
+        width: 20px; 
+    }
+}

@@ -1,0 +1,185 @@
+.detailswrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    margin: 10px 50px;
+  
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 25px 0;
+}
+
+
+.metadata{
+    display: flex;
+    gap: 25px;
+    justify-content: flex-start;
+}
+
+.image{
+    margin: 10px auto;
+
+}
+
+.image img {
+    border-radius: 10px;
+}
+
+.control{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    margin-top: 20px;
+  
+}
+
+.edit{
+    margin-left: 10px;
+    background-color: #16c784;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: bold;
+    height: fit-content;
+}
+
+.edit:hover {
+    background-color: #17ae74;
+  }
+  
+.delete{
+    margin-left: 10px;
+    background-color: #ea3943;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: bold;
+    height: fit-content;
+}
+
+
+.delete:hover {
+    background-color: #e01822;
+  }
+  
+.right{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+}
+
+
+.postcomment{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.input{
+    border: none;
+    padding: 10px 20px;
+    color: #bebcc0;
+    font-size: 18px;
+    border-radius: 10px;
+    outline: none;
+    margin: 15px 10px;
+    border: 1px solid #fff;
+    flex: 1;
+}
+
+.postbtn{
+    background-color: #3861fb;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 10px 40px;
+    height: fit-content;
+    border-radius: 10px;
+}
+
+.postbtn:hover {
+    background-color: #1f4ffd;
+  }
+  
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1024px) {
+    /* Adjust for tablet screens */
+    .detailswrap {
+      flex-direction: column;
+      gap: 30px;
+      margin: 10px 20px;
+    }
+  
+    .left, .right {
+      width: 100%;
+      padding: 0;
+    }
+  
+    .metadata {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+
+@media (max-width: 768px) {
+    /* Adjust for mobile devices */
+    .detailswrap {
+      margin: 10px;
+      gap: 20px;
+    }
+  
+    .left, .right {
+      width: 100%;
+    }
+  
+    .image img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .control {
+      justify-content: center;
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .edit, .delete {
+      width: 100%;
+      margin: 5px 0;
+      padding: 10px;
+    }
+  
+    .postcomment {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .input {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .postbtn {
+      width: 100%;
+      padding: 10px 20px;
+    }
+  }

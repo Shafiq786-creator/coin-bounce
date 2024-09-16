@@ -1,0 +1,73 @@
+.commentListWrap{
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.commentList{
+    height: 60vh;
+    overflow-y: auto;
+    padding: 10px;
+    border: 1px solid #5b5b5b;
+    border-radius: 5px;
+}
+
+.noComments{
+    color: #bebcc0;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+    .commentListWrap {
+        width: 95%; 
+    }
+
+    .commentList {
+        height: 50vh;
+    }
+}
+
+@media (max-width: 992px) {
+    .commentListWrap {
+        width: 100%; 
+    }
+
+    .commentList {
+        height: 45vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .commentListWrap {
+        width: 100%;
+    }
+
+    .commentList {
+        height: 40vh; 
+    }
+
+    .noComments {
+        font-size: 0.9rem; 
+    }
+}
+
+@media (max-width: 576px) {
+    .commentListWrap {
+        width: 100%;
+    }
+
+    .commentList {
+        height: 35vh;
+    }
+
+    .noComments {
+        font-size: 0.85rem; 
+    }
+}

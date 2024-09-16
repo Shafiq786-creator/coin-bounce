@@ -1,0 +1,133 @@
+.wrapper {
+    margin: 0 auto;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .header {
+    font-size: 48px;
+    font-weight: bold;
+    width: inherit;
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .content {
+    padding: 18px 30px;
+    margin: 15px;
+    width: 60%;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    font-size: 20px;
+    min-height: 200px;
+  }
+  
+  .photoPrompt {
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    gap: 50px;
+    width: 60%;
+    align-items: center;
+  }
+  
+  .update {
+    background-color: #3861fb;
+    color: #fff;
+    border: none;
+    outline: none;
+    width: 30%;
+    border-radius: 10px;
+    padding: 15px 30px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 40px;
+  }
+  
+  .update:hover,
+  .update:disabled {
+    background-color: #829dff;
+  }
+
+  /* Media Queries for Responsive Design */
+
+/* For tablets */
+@media (max-width: 1024px) {
+    .header {
+        font-size: 36px;
+    }
+
+    .content {
+        width: 70%; 
+        font-size: 18px;
+    }
+
+    .photoPrompt {
+        width: 70%;
+        gap: 30px;
+    }
+
+    .update {
+        width: 40%; 
+        padding: 12px 25px;
+        font-size: 18px;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+    .wrapper {
+        width: 90vw; 
+    }
+
+    .header {
+        font-size: 28px;
+    }
+
+    .content {
+        width: 85%; 
+        font-size: 16px;
+    }
+
+    .photoPrompt {
+        width: 85%;
+        gap: 20px;
+        font-size: 16px;
+    }
+
+    .update {
+        width: 60%; 
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+}
+
+/* For small mobile devices */
+@media (max-width: 480px) {
+    .wrapper {
+        width: 95vw;
+    }
+
+    .header {
+        font-size: 24px;
+    }
+
+    .content {
+        width: 95%; 
+        font-size: 14px;
+    }
+
+    .photoPrompt {
+        width: 95%;
+        font-size: 14px;
+    }
+
+    .update {
+        width: 80%; 
+        font-size: 14px;
+    }
+}

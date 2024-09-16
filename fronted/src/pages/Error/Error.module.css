@@ -1,0 +1,62 @@
+.error{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    min-height: 60vh;
+    padding: 0 20px;
+}
+
+.errorHeader{
+    color: #ea3943;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.errorBody{
+    font-size: 2rem;
+    margin: 20px o;
+}
+
+.err97c{
+    text-decoration: none;
+    font-weight: bold;
+    color: #3861fb;
+}
+
+@media (max-width: 1200px) {
+    .errorHeader {
+        font-size: 3.5rem;
+    }
+    .errorBody {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .errorHeader {
+        font-size: 3rem;
+    }
+    .errorBody {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .errorHeader {
+        font-size: 2.5rem;
+    }
+    .errorBody {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .errorHeader {
+        font-size: 2rem;
+    }
+    .errorBody {
+        font-size: 1.2rem;
+    }
+}

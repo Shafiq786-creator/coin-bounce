@@ -1,0 +1,57 @@
+.textinput{
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+    align-items: center;
+}
+
+.textinput input{
+    padding: 15px 30px;
+    margin: 15px;
+    outline: none;
+    width: 30%;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    font-size: 20px;
+    font-size: 1.25rem;
+    transition: width 0.3s ease;
+}
+
+.errorMessage{
+    color: #de1b55;
+    text-align: left;
+    width: 30%;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 1200px) {
+    .textinput input,
+    .errorMessage {
+        width: 50%; 
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .textinput input,
+    .errorMessage {
+        width: 50%; 
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .textinput input,
+    .errorMessage {
+        width: 60%; 
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .textinput input,
+    .errorMessage {
+        width: 70%;
+        font-size: 0.85rem; 
+    }
+}
